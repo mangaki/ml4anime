@@ -1,0 +1,36 @@
+\documentclass[margin=0pt]{standalone}
+\usepackage{xltxtra}
+\setromanfont{Hoefler Text}
+\newfontfamily{\N}{CMU Sans Serif}
+\newfontfamily{\C}{CMU Sans Serif Demi Condensed}
+\newfontfamily{\J}{Hiragino Sans W9}
+\usepackage{tikz}
+
+\def\author{\fontsize{42}{42}\selectfont}
+\def\mecha{\fontsize{60}{60}\selectfont}
+\def\supermecha{\fontsize{100}{100}\selectfont}
+\def\kami{\fontsize{220}{220}\selectfont}
+
+\begin{document}\mecha\pagestyle{empty}\begin{tikzpicture}[xscale=29.7,yscale=42,inner sep=0pt]
+%\node[opacity=0.5] at (0.5,0.5) {\includegraphics[width=29.7cm]{hanabi.jpg}};  % Full background
+\node[opacity=0.3] at (0.5,0.82) {\includegraphics[width=29.7cm]{mgm.png}};
+\node[opacity=0.2] at (0.25,0.25) {\includegraphics[width=14.85cm]{i2v.png}};
+\node[opacity=0.5] at (0.75,0.25) {\includegraphics[width=14.85cm]{fate.png}};
+%\draw[white] (0,0) rectangle (1,1);  % A3 limit
+%\draw[line width=2mm,opacity=0.5,gray,line cap=round] (0.1,0.9) -- (0.33,0.67);  % Nice effect
+%\draw[line width=2mm,opacity=0.5,gray,line cap=round] (0.67,0.33) -- (0.9,0.1);
+
+\node[below right=1cm] at (0,1) {\C MakeGirls.Moe};
+\node[above left=1cm] at (1,0) {\includegraphics[width=8cm]{mangaki}};
+
+\node[
+    label={[label distance=3mm]100:\includegraphics[width=7cm]{kyoto}},
+    label={[label distance=3mm]80:\includegraphics{kashima-lab} \raisebox{5mm}{\parbox{10cm}{\Huge \N Department of Intelligence\\ Science and Technology}}},
+    label=left:\supermecha \J \bfseries ML,label=right:\supermecha \em \J アニメ,
+    label={[align=center,text width=15cm,label distance=5mm]below:\C ~ 8.31 Thu \hfill 13:00 \\ Bldg No 7\\ Lecture Room 1}] at (0.5,0.5) {\kami !};
+
+\node[align=right,fill=white,fill opacity=0.5,text opacity=1] at (0.75,0.85) {\author Yanghua Jin\\ Creating anime\\ characters\\ using\\ AI\\[-5mm]};
+
+\node[align=left] at (0.3,0.13) {\author Jill-Jênn Vie\\ Using Ratings\\ and Posters for\\ Anime \& Manga\\ Recommendations};
+\end{tikzpicture}%
+\end{document}
